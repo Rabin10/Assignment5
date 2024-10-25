@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Animal</title>
+</head>
+<body>
+<h1>Create Animal</h1>
+<form action="#" th:action="@{/animal/create}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"/>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"/>
+    <br>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type"/>
+    <br>
+    <button type="submit">Create</button>
+</form>
+</body>
+</html>

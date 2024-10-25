@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Animal Details</title>
+</head>
+<body>
+<h1>Animal Details</h1>
+<p><strong>ID:</strong> <span th:text="${animal.id}"></span></p>
+<p><strong>Name:</strong> <span th:text="${animal.name}"></span></p>
+<p><strong>Type:</strong> <span th:text="${animal.type}"></span></p>
+<p><strong>Age:</strong> <span th:text="${animal.age}"></span></p>
+<a th:href="@{/animals}">Back to Animal List</a>
+</body>
+</html>

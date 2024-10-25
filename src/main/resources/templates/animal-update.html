@@ -1,0 +1,22 @@
+!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <title>Update Animal</title>
+</head>
+<body>
+<h1>Update Animal</h1>
+<form action="#" method="post" th:action="@{/animal/update}">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:value="'Lion'"/>
+    <br>
+    <label for="age">Age:</label>
+    <input id="age" name="age" th:value="5" type="number"/>
+    <br>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" th:value="'Mammal'"/>
+    <br>
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>
